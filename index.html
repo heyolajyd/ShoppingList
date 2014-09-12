@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<title>My Shopping tool</title>	
+	<head><meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<h1>Going Shopping?!!</h1>
+		<p>Want to go shopping?! It'd be a nice idea to make a list first before deciding finally on what you really desire</p>
+		<p>Simply make a list of what you'd really want</p>
+		<p>You can simply check off items from the list to decline interest</p>
+		<p>Happy Shopping!!!</p>
+	</header>
+	<div id="section">
+		<center>
+			<form id="userSelection">
+				<div id="itemArea">
+					<label for="item">Item
+						<input id="item" type="text" placeholder="Item desired" size="25">
+					</label><br>
+				
+					<input id="add" type="button" value="Add to Cart">
+				</div>
+			</form>
+		<span id="warning"></span>
+		</center>
+		<div id="userTables">
+			<table border="1" id="toSelect" class="options">
+				
+					<caption>
+						Shopping Items
+					</caption>
+				<thead>	
+					<tr>
+						<th>Select</th>
+						<th>Items</th>
+						<th>Remove</th>
+					</tr>
+				</thead>
+				<tbody  id="data" class="selection">
+					<!--Body of the table goes here-->
+				</tbody>
+			</table>
+			<table border="1" id="toPurchase" class="options">
+					<caption>
+						Purchase List
+					</caption>
+				<thead>
+					<tr>
+						<th>Selected Items</th>
+						<th>Items</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="data" class="purchased">
+					<!--Body of the table goes here-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+<script src="javascript/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/Shopping.js" type="text/javascript" charset="utf-8"></script>	
+				<script src="javascript/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
